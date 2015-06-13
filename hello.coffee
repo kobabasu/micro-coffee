@@ -1,8 +1,11 @@
-class @Hello
-  variable = 'hello'
+define [
+], (
+) ->
+  class @Hello
+    variable = 'hello'
 
-  constructor: ->
-    sayHello()
+    constructor: ->
+      sayHello()
 
-  sayHello = ->
-    $('body').append(variable)
+    sayHello = ->
+      $('body').append(variable)
