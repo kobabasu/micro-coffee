@@ -1,7 +1,7 @@
 define [
 ], (
 ) ->
-  class @Get
+  class @Rest
 
     host = 'http://localhost:8080/api/'
 
