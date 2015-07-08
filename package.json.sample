@@ -1,0 +1,36 @@
+{
+  "name": "coffee-app",
+  "version": "0.0.1",
+  "description": "coffee minimum app",
+  "main": "sample/dist/build.js",
+  "repository": {
+    "type": "git",
+    "url": "//github.com/kobabasu/micro-coffee.git"
+  },
+  "keywords": [
+    "coffeescript",
+    "jquery"
+  ],
+  "os": [
+    "darwin",
+    "linux",
+    "!win32"
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "devDependencies": {
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint"
+  },
+  "scripts": {
+    "preinstall": "npm install -g coffee-script",
+    "start": "NODE_ENV=production NODE_PATH=",
+    "coffee": "coffee -o ./sample/js -c ./*.coffee",
+    "build": "npm run coffee"
+  },
+  "preferGlobal": true,
+  "author": "kobabasu",
+  "license": "MIT"
+}
