@@ -25,7 +25,7 @@
     "parser": "babel-eslint"
   },
   "scripts": {
-    "preinstall": "npm install -g coffee-script",
+    "preinstall": "npm install -g coffee-script babel babel-eslint",
     "start": "NODE_ENV=production NODE_PATH=",
     "coffee": "coffee -o ./sample/js -c ./*.coffee",
     "build": "npm run coffee"
