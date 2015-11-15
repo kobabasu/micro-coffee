@@ -7,6 +7,7 @@
     "type": "git",
     "url": "//github.com/kobabasu/micro-coffee.git"
   },
+
   "keywords": [
     "coffeescript",
     "jquery"
@@ -16,16 +17,22 @@
     "linux",
     "!win32"
   ],
+
   "dependencies": {
     "jquery": "*"
   },
   "devDependencies": {
   },
+
   "eslintConfig": {
     "parser": "babel-eslint"
   },
+
   "scripts": {
-    "preinstall": "npm install -g coffee-script babel babel-eslint",
+    "global": "npm install -g coffee-script babel babel-eslint",
+
+    "gitkeep": "touch ../js/.gitkeep; touch ../dist/.gitkeep;",
+    "preinstall": "mkdir ../{js,dist};",
     "start": "NODE_ENV=production NODE_PATH=",
     "coffee": "coffee -o ./sample/js -c ./*.coffee",
     "build": "npm run coffee"
